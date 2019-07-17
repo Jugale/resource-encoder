@@ -1,5 +1,5 @@
-# resource-encoder.sh
-Encodes resources as byte arrays. Swift only, but feel free to add your own languages.
+# Resource Encoder
+A script to encode project resources as byte arrays. Swift only, but feel free to add your own languages.
 
 ## Why?
 When developing mobile apps, there are many cases where you shouldn't have certain strings as literals in your binary (or, even worse, have them in resource files). For example, an API key stored as a string in your code could easily be retrieved by hackers and used to your detriment.
@@ -11,13 +11,13 @@ Encoding strings as byte-arrays makes identifying them in your binary much more 
 
 Given the file `APIKey.txt` that contains the string `Abcd123`, run:
 
-```
+```bash
 $ resource-encoder.sh APIKey.txt APIKey.swift
 ```
 
 This generates `APIKey.swift` containing the following:
 
-```
+```swift
 import Foundation
 
 struct APIKey {
