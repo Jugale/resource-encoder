@@ -90,7 +90,7 @@ EOF
 }
 
 if [ -n "$SCRIPT_INPUT_FILE_COUNT" ]; then
-    # We are in an Xcode runscript phase and there are input fules
+    # We are in an Xcode runscript phase and there are input files
     COUNTER=0
     while [ $COUNTER -lt ${SCRIPT_INPUT_FILE_COUNT} ]; do
         tmp="SCRIPT_INPUT_FILE_$COUNTER"
