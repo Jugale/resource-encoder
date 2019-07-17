@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # Homepage: https://github.com/maxchuquimia/resource-encoder
 
 function print_help {
