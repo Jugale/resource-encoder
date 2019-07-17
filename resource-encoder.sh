@@ -1,4 +1,5 @@
 #/bin/bash
+# Homepage: https://github.com/maxchuquimia/resource-encoder
 
 function print_help {
     echo "Usage: $(basename "$0") <Input.xxx> <Output.swift>"
